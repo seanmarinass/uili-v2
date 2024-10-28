@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`flex flex-col gep-[1rem] font-inter dark antialiased`}>
+      <body className={`flex flex-col gap-[1rem] font-inter dark antialiased`}>
         <Navbar />
         {children}
       </body>

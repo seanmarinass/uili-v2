@@ -9,14 +9,20 @@ const services: string[] = [
 
 export default function ServicesSection() {
   return (
-    <section className="w-full flex flex-col gap-[0.75rem]">
-      {services.map((service, index) => (
-        <HoverCard key={index}>
-          <HoverCardTrigger asChild>
-            <p className="text-5xl font-bold hover:text-7xl hover:text-primary transition-all ease-in-out delay-100 duration-500">{service}</p>
-          </HoverCardTrigger>
-        </HoverCard>
-      ))}
+    <section className="w-full flex flex-col font-bold gap-[2rem]">
+      <h1 className="text-7xl">Our Services</h1>
+
+      <div className="w-full flex flex-col gap-[0.75rem]">
+        {services.map((service, index) => (
+          <HoverCard key={index}>
+            <HoverCardTrigger asChild>
+              <p className="text-6xl hover:text-7xl hover:text-primary transition-all ease-in-out delay-100 duration-500">
+                {service}
+              </p>
+            </HoverCardTrigger>
+          </HoverCard>
+        ))}
+      </div>
     </section>
   );
 }

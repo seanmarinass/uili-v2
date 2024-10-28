@@ -33,18 +33,21 @@ const navbarItems: NavbarItem[] = [
 
 export default function Navbar() {
   return (
-    <nav className="flex w-full p-[1rem]">
+    <nav className="flex w-full p-[2rem]">
       <div className="flex-grow">
         <h1>Logo</h1>
       </div>
 
       <NavigationMenu>
-        <NavigationMenuList className="flex gap-[0.75rem] text-xl font-bold">
+        <NavigationMenuList className="flex gap-[1rem] text-2xl font-bold">
           {navbarItems.map((item, index) => {
             const { href, label } = item;
 
             return (
-              <NavigationMenuItem key={index}>
+              <NavigationMenuItem
+                key={index}
+                className="transition-all ease-in-out delay-100 duration-300 hover:text-primary"
+              >
                 <NavigationMenuTrigger>{label}</NavigationMenuTrigger>
               </NavigationMenuItem>
             );
