@@ -46,7 +46,7 @@ export default function Navbar() {
             return (
               <NavigationMenuItem
                 key={index}
-                className="transition-all ease-in-out delay-100 duration-300 hover:text-primary"
+                className="text-primary font-bold"
               >
                 <NavigationMenuTrigger>{label}</NavigationMenuTrigger>
               </NavigationMenuItem>
