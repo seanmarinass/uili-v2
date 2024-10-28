@@ -6,7 +6,9 @@ export default function ClientSection() {
         <p>Clients</p>
       </div>
 
-      <div className="flex-grow">Hello</div>
+      <div className="flex-grow">
+        
+      </div>
     </section>
   );
 }
