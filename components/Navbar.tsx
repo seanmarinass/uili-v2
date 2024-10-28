@@ -35,19 +35,13 @@ export default function Navbar() {
       </div>
 
       <NavigationMenu>
-        <NavigationMenuList className="flex gap-[0.5rem]">
+        <NavigationMenuList className="flex gap-[0.75rem] text-xl font-bold">
           {navbarItems.map((item, index) => {
             const { href, label } = item;
 
             return (
               <NavigationMenuItem key={index}>
-                <NavigationMenuTrigger
-                  onClick={() => {
-                    console.log(`Hello ${label}`);
-                  }}
-                >
-                  {label}
-                </NavigationMenuTrigger>
+                <NavigationMenuTrigger>{label}</NavigationMenuTrigger>
               </NavigationMenuItem>
             );
           })}

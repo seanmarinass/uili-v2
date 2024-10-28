@@ -1,5 +1,9 @@
-import Image from "next/image";
+import HomeSection from "../sections/HomeSection";
 
 export default function Home() {
-  return <div className=""></div>;
+  return (
+    <main className="flex flex-col p-[1rem] justify-center align-middle items-center w-full">
+      <HomeSection />
+    </main>
+  );
 }
