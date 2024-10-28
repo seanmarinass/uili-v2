@@ -22,6 +22,10 @@ const navbarItems: NavbarItem[] = [
     label: "About",
   },
   {
+    href: "#clients",
+    label: "Our Clients",
+  },
+  {
     href: "#works",
     label: "Our Works",
   },
