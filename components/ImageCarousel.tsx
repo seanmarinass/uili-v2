@@ -18,20 +18,46 @@ export default function ImageCarousel() {
     <div className="embla flex-grow" ref={emblaRef}>
       <div className="embla__container w-[600px] h-[500px]">
         <div className="embla__slide">
-          <Card className="w-[500px] h-[500px] aspect-square bg-cyan-400 text-black flex justify-center align-middle items-center">
-            Client 1
+          <Card className="relative w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center">
+            <Image
+              src="/canonLogo.svg"
+              alt="Canon logo"
+              fill={true}
+              style={{ objectFit: "contain" }}
+            />
           </Card>
         </div>
 
         <div className="embla__slide">
-          <Card className="w-[500px] h-[500px] aspect-square bg-red-400 text-black flex justify-center align-middle items-center">
-            <CardContent>Client 2</CardContent>
+          <Card className="relative w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center">
+            <Image
+              src="/parkwayPantaiLogo.svg"
+              alt="Parkway Pantai logo"
+              fill={true}
+              style={{ objectFit: "contain" }}
+            />
           </Card>
         </div>
 
         <div className="embla__slide">
-          <Card className="w-[500px] h-[500px] aspect-square bg-yellow-300 text-black flex justify-center align-middle items-center">
-            <CardContent>Client 3</CardContent>
+          <Card className="relative w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center">
+            <Image
+              src="https://tukuz.com/wp-content/uploads/2020/07/singapore-national-eye-centre-snec-logo-vector.png"
+              alt="Parkway Pantai logo"
+              fill={true}
+              style={{ objectFit: "contain" }}
+            />
+          </Card>
+        </div>
+
+        <div className="embla__slide">
+          <Card className="relative w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center">
+            <Image
+              src="/changiAirportGroupLogo.png"
+              alt="Changi Airport Group logo"
+              fill={true}
+              style={{ objectFit: "contain" }}
+            />
           </Card>
         </div>
       </div>
