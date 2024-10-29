@@ -60,6 +60,17 @@ export default function ImageCarousel() {
             />
           </Card>
         </div>
+
+        <div className="embla__slide">
+          <Card className="relative w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center">
+            <Image
+              src="/moeLogo.jpg"
+              alt="Ministry of Edication logo"
+              fill={true}
+              style={{ objectFit: "contain" }}
+            />
+          </Card>
+        </div>
       </div>
     </div>
   );
