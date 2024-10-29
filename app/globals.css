@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Inter, sans-serif;
-}
-
 .embla {
   overflow: hidden;
 }
@@ -78,6 +74,7 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
