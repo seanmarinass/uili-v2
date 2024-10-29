@@ -43,7 +43,7 @@ export default function ImageCarousel() {
           <Card className="relative w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center">
             <Image
               src="https://tukuz.com/wp-content/uploads/2020/07/singapore-national-eye-centre-snec-logo-vector.png"
-              alt="Parkway Pantai logo"
+              alt="Singapore National Eye Centre logo"
               fill={true}
               style={{ objectFit: "contain" }}
             />
