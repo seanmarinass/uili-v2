@@ -18,13 +18,15 @@ export default function ImageCarousel() {
     <div className="embla flex-grow" ref={emblaRef}>
       <div className="embla__container w-[600px] h-[500px]">
         <div className="embla__slide">
-          <Card className="relative w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center">
-            <Image
-              src="/canonLogo.svg"
-              alt="Canon logo"
-              fill={true}
-              style={{ objectFit: "contain" }}
-            />
+          <Card className="w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center p-[1rem]">
+            <div className="relative h-full w-full">
+              <Image
+                src="/canonLogo.svg"
+                alt="Canon logo"
+                fill={true}
+                style={{ objectFit: "contain" }}
+              />
+            </div>
           </Card>
         </div>
 
@@ -36,6 +38,19 @@ export default function ImageCarousel() {
               fill={true}
               style={{ objectFit: "contain" }}
             />
+          </Card>
+        </div>
+
+        <div className="embla__slide">
+          <Card className="w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center p-[1rem]">
+            <div className="relative w-full h-full">
+              <Image
+                src="/logitechLogo.svg"
+                alt="Logitech logo"
+                fill={true}
+                style={{ objectFit: "contain" }}
+              />
+            </div>
           </Card>
         </div>
 
