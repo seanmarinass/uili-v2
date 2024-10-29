@@ -31,8 +31,8 @@ export default function ImageCarousel() {
         <div className="embla__slide">
           <Card className="relative w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center">
             <Image
-              src="/parkwayPantaiLogo.svg"
-              alt="Parkway Pantai logo"
+              src="/nutellaLogo.svg"
+              alt="Nutella logo"
               fill={true}
               style={{ objectFit: "contain" }}
             />
@@ -55,6 +55,17 @@ export default function ImageCarousel() {
             <Image
               src="/changiAirportGroupLogo.png"
               alt="Changi Airport Group logo"
+              fill={true}
+              style={{ objectFit: "contain" }}
+            />
+          </Card>
+        </div>
+
+        <div className="embla__slide">
+          <Card className="relative w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center">
+            <Image
+              src="/parkwayPantaiLogo.svg"
+              alt="Parkway Pantai logo"
               fill={true}
               style={{ objectFit: "contain" }}
             />
