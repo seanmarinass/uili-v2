@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function ImageCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
     Autoplay({
-      delay: 750,
+      delay: 1000,
       stopOnInteraction: false,
       stopOnFocusIn: true,
       stopOnMouseEnter: true,
