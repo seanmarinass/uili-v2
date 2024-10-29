@@ -1,14 +1,13 @@
+import ImageCarousel from "@/components/ImageCarousel";
+
 export default function ClientSection() {
   return (
-    <section className="flex w-full text-5xl font-bold">
-      <div className="text-center">
-        <p>Our</p>
-        <p>Clients</p>
+    <section className="flex w-full text-7xl font-bold justify-center align-middle items-center">
+      <div className="text-left w-[50%]">
+        <p>Our Clients</p>
       </div>
 
-      <div className="flex-grow">
-        
-      </div>
+      <ImageCarousel />
     </section>
   );
 }

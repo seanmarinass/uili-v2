@@ -8,8 +8,8 @@ export default function Home() {
     <main className="flex flex-col gap-[10rem] p-[6.25rem] justify-center align-middle items-center w-full">
       <HomeSection />
       <AboutSection />
-      {/* <ClientSection /> */}
       <ServicesSection />
+      <ClientSection />
     </main>
   );
 }
