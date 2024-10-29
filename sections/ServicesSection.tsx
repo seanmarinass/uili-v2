@@ -1,15 +1,14 @@
 "use client";
 
+import FadeIn from "@/components/FadeIn";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
 
-// Define a type for Service
 type Service = {
   title: string;
   description: string;
 };
 
-// Services array with titles and descriptions
 const services: Service[] = [
   {
     title: "Creative Design",
@@ -34,7 +33,7 @@ const services: Service[] = [
 ];
 
 export default function ServicesSection() {
-  const [hoveredIndex, setHoveredIndex] = useState<number>(0);
+  const [hoveredIndex, setHoveredIndex] = useState<number>(-1);
 
   return (
     <section className="flex w-full gap-[5rem]">
@@ -55,7 +54,10 @@ export default function ServicesSection() {
         </div>
       </div>
       {hoveredIndex !== -1 && (
-        <div className="flex flex-grow justify-center items-center align-middle font-bold">
+        <FadeIn
+          duration={0.8}
+          className="flex flex-grow justify-center items-center align-middle font-bold"
+        >
           <Card className="w-full max-w-[50rem] border-none">
             <CardHeader>
               <CardTitle className="text-7xl text-nowrap bg-primary text-background w-fit p-[0.75rem]">
@@ -66,7 +68,7 @@ export default function ServicesSection() {
               {services[hoveredIndex].description}
             </CardContent>
           </Card>
-        </div>
+        </FadeIn>
       )}
     </section>
   );
