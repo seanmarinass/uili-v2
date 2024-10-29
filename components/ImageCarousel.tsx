@@ -16,7 +16,7 @@ export default function ImageCarousel() {
 
   return (
     <div className="embla flex-grow" ref={emblaRef}>
-      <div className="embla__container w-[600px] h-[500px]">
+      <div className="embla__container max-w-[600px] h-[500px]">
         <div className="embla__slide">
           <Card className="w-[500px] h-[500px] aspect-square bg-white text-black flex justify-center align-middle items-center p-[1rem]">
             <div className="relative h-full w-full">
