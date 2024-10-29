@@ -16,7 +16,7 @@ export default function ServicesSection() {
         {services.map((service, index) => (
           <HoverCard key={index}>
             <HoverCardTrigger asChild>
-              <p className="text-6xl hover:text-7xl hover:text-primary transition-all ease-in-out delay-100 duration-500">
+              <p className="text-6xl hover:text-7xl hover:text-primary transition-all ease-in-out delay-50 duration-300">
                 {service}
               </p>
             </HoverCardTrigger>
